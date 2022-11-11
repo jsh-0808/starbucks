@@ -1,21 +1,3 @@
-// 헤더 검색-------------------
-const serchEl = document.querySelector('.search');
-const searchInputEl = serchEl.querySelector('input');
-
-serchEl.addEventListener('click', function () {
-    searchInputEl.focus();
-});
-
-searchInputEl.addEventListener('focus', function () {
-    serchEl.classList.add('focused');
-    searchInputEl.setAttribute('placeholder', '통합검색');
-});
-searchInputEl.addEventListener('blur', function () {
-    serchEl.classList.remove('focused');
-    searchInputEl.setAttribute('placeholder', '');
-});
-
-
 
 // 배지 및 to-top버튼----------------------
 const badgeEl = document.querySelector('header .badges');
@@ -169,9 +151,3 @@ new Swiper('.awards .swiper-container', {
         nextEl: '.awards .swiper-next',
     }
 });
-
-
-
-// FOOTER---------------------------
-const thisYear = document.querySelector('.this-year');
-thisYear.textContent = new Date().getFullYear();
